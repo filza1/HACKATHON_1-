@@ -1,0 +1,30 @@
+:root {
+  --ifm-color-primary: #0f766e;
+  --ifm-color-primary-dark: #0b5f59;
+  --ifm-color-primary-darker: #084b46;
+  --ifm-color-primary-darkest: #063836;
+  --ifm-color-primary-light: #12867e;
+  --ifm-color-primary-lighter: #14948c;
+  --ifm-color-primary-lightest: #16a39a;
+  --ifm-code-font-size: 95%;
+  --ifm-font-color-base: #1f2937;
+  --ifm-background-color: #faf7f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #faf7f2 0%, #ffffff 20%);
+}
+
+.navbar {
+  backdrop-filter: blur(8px);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  letter-spacing: -0.02em;
+}
