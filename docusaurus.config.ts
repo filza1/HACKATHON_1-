@@ -3,9 +3,9 @@ import type { Config } from '@docusaurus/types';
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'From Digital Intelligence to Embodied Intelligence',
-  url: 'https://example.com',
+  url: `https://${process.env.VERCEL_URL ?? 'physical-ai-humanoid-robotics-book.vercel.app'}`,
   baseUrl: '/',
-  organizationName: 'your-org',
+  organizationName: 'filza1',
   projectName: 'physical-ai-humanoid-robotics-book',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -31,6 +31,13 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+    metadata: [
+      {
+        name: 'description',
+        content:
+          'A robotics book covering physical AI, ROS 2, simulation, NVIDIA Isaac, VLA systems, humanoid robotics, hardware, and a full capstone stack.',
+      },
+    ],
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
       items: [
@@ -41,7 +48,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/your-org/physical-ai-humanoid-robotics-book',
+          href: 'https://github.com/filza1/HACKATHON_1-',
           label: 'GitHub',
           position: 'right',
         },
