@@ -1,12 +1,12 @@
 import type { Config } from '@docusaurus/types';
 
 const config: Config = {
-  title: 'Physical AI & Humanoid Robotics',
+  title: 'hackathon_book',
   tagline: 'From Digital Intelligence to Embodied Intelligence',
-  url: `https://${process.env.VERCEL_URL ?? 'physical-ai-humanoid-robotics-book.vercel.app'}`,
+  url: `https://${process.env.VERCEL_URL ?? 'hackathon_book.vercel.app'}`,
   baseUrl: '/',
   organizationName: 'filza1',
-  projectName: 'physical-ai-humanoid-robotics-book',
+  projectName: 'hackathon_book',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: undefined,
@@ -39,7 +39,7 @@ const config: Config = {
       },
     ],
     navbar: {
-      title: 'Physical AI & Humanoid Robotics',
+      title: 'hackathon_book',
       items: [
         {
           type: 'docSidebar',
@@ -57,7 +57,7 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [],
-      copyright: `Copyright ${new Date().getFullYear()} Physical AI & Humanoid Robotics`,
+      copyright: `Copyright ${new Date().getFullYear()} hackathon_book`,
     },
   },
 };

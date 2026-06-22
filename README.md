@@ -1,4 +1,4 @@
-# Physical AI & Humanoid Robotics
+# hackathon_book
 
 Book project for _From Digital Intelligence to Embodied Intelligence_.
 
