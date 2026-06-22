@@ -7,28 +7,45 @@ sidebar_position: 4
 
 ## Purpose
 
-Connect dialogue systems with robot behavior.
+Show how robots can interact through dialogue while still operating safely in the physical world.
 
 ## What You Will Learn
 
-- Intent handling.
-- Turn-taking and dialog state.
-- Human-robot interaction basics.
+- How conversation and action connect.
+- Why context matters in robot dialogue.
+- Why conversational systems still need safety and grounding.
 
-## Subchapters
+## Chapter Overview
 
-- Intent handling
-- Turn-taking and dialog state
-- Human-robot interaction basics
+A conversational robot does more than answer questions. It must understand requests, remember context, map language to physical tasks, and respond in a way that is useful to the human operator.
 
-## Hands-On Project
+## Core Ideas
 
-Prototype a command-and-confirmation interaction.
+The conversation loop includes speech recognition, intent interpretation, task planning, execution, and a spoken response back to the user.
 
-## Diagrams
+## Practical Example
 
-- Conversation to action flow
+A person asks the robot to fetch an object, the robot clarifies the request if needed, and then reports progress while acting.
+
+## Why It Matters
+
+Dialogue is a natural interface, but it only becomes meaningful when the robot can actually do something in the world.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Speech"] --> B["Dialogue Manager"]
+  B --> C["Task Planner"]
+  C --> D["Robot Action"]
+  D --> E["Spoken Response"]
+```
+
+## Key Takeaway
+
+Conversational robots combine language and physical behavior into one interactive system.
 
 ## References
 
-- Human-robot interaction references
+- [Human–robot interaction](https://en.wikipedia.org/wiki/Human%E2%80%93robot_interaction)
+

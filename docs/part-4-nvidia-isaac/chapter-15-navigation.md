@@ -7,29 +7,45 @@ sidebar_position: 4
 
 ## Purpose
 
-Show how robots plan and move through an environment.
+Explain how robots plan paths, avoid obstacles, and move toward goals.
 
 ## What You Will Learn
 
-- Planning and motion control.
-- Localization to navigation pipeline.
-- Recovery behaviors.
+- How localization, mapping, and planning fit together.
+- Why navigation is more than route finding.
+- How obstacle avoidance and goal tracking work.
 
-## Subchapters
+## Chapter Overview
 
-- Planning and motion control
-- Localization-to-navigation pipeline
-- Recovery behaviors
+Navigation is the machinery that turns perception into movement. It combines maps, localization, path planning, and motion control into one autonomy loop.
 
-## Hands-On Project
+## Core Ideas
 
-Sketch a navigation stack for a small mobile robot.
+A robot must know where it is, where it wants to go, what obstacles exist, and how to move safely through the environment.
 
-## Diagrams
+## Practical Example
 
-- Navigation pipeline
-- Recovery flow
+A service robot can receive a destination, compute a path, replan if the corridor changes, and stop safely if a person walks into its route.
+
+## Why It Matters
+
+Navigation is one of the clearest demonstrations that physical AI is not a text-only problem. The world pushes back.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Localization"] --> B["Planner"]
+  B --> C["Motion Controller"]
+  C --> D["Robot Movement"]
+  D --> A
+```
+
+## Key Takeaway
+
+Navigation is the practical bridge between sensing the world and moving through it safely.
 
 ## References
 
-- Navigation stack docs
+- [Robot navigation](https://en.wikipedia.org/wiki/Robot_navigation)
+

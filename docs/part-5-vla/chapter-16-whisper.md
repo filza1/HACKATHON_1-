@@ -7,28 +7,45 @@ sidebar_position: 1
 
 ## Purpose
 
-Introduce speech-to-text as the first step in a voice-to-action pipeline.
+Explain how Whisper turns speech into text for robot interaction.
 
 ## What You Will Learn
 
-- Speech-to-text basics.
-- Latency and accuracy tradeoffs.
-- Integration points with robotics.
+- Why speech recognition matters in robotics.
+- How Whisper supports voice interfaces.
+- Why transcription errors must be handled carefully.
 
-## Subchapters
+## Chapter Overview
 
-- Speech-to-text pipeline
-- Latency and accuracy tradeoffs
-- Integration points with robotics
+Whisper provides a speech-to-text front end that can feed commands into a robot system. That makes it a useful component for voice control and conversational interaction.
 
-## Hands-On Project
+## Core Ideas
 
-Add voice input to a robot command prototype.
+The model is strong at multilingual transcription, but like all speech systems it can still mishear noise, accents, or ambiguous input.
 
-## Diagrams
+## Practical Example
 
-- Voice-to-text pipeline
+A user says a command aloud, Whisper produces text, and the robot interprets that text as a task request.
+
+## Why It Matters
+
+Voice is one of the most natural ways to interact with a robot, but it only works well when the system handles recognition and uncertainty correctly.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Audio Input"] --> B["Whisper"]
+  B --> C["Transcribed Text"]
+  C --> D["Intent Parsing"]
+  D --> E["Robot Action"]
+```
+
+## Key Takeaway
+
+Whisper is the speech layer that lets a robot hear the human operator.
 
 ## References
 
-- Whisper model references
+- [OpenAI Whisper](https://github.com/openai/whisper)
+

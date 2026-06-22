@@ -7,29 +7,46 @@ sidebar_position: 3
 
 ## Purpose
 
-Introduce the sensor modalities used in robotics and the idea of sensor noise.
+Explain how sensors turn the physical world into usable robot data.
 
 ## What You Will Learn
 
-- Camera, depth, IMU, and LiDAR basics.
-- Calibration and noise concepts.
-- Virtual sensor behavior.
+- Common robot sensor types.
+- Why calibration and noise matter.
+- How sensors feed perception and control.
 
-## Subchapters
+## Chapter Overview
 
-- Camera, depth, IMU, LiDAR concepts
-- Sensor noise and calibration
-- Virtual sensor simulation
+Sensors are the robot's contact with reality. They provide the raw signals that make perception, localization, navigation, and manipulation possible.
 
-## Hands-On Project
+## Core Ideas
 
-Compare two sensor pipelines for the same task.
+Different sensors solve different problems: cameras for appearance, depth sensors for structure, IMUs for motion, and tactile sensors for contact.
 
-## Diagrams
+## Practical Example
 
-- Sensor data flow
-- Calibration loop
+A depth camera can help a robot detect a table edge, while an IMU helps stabilize its motion and understand orientation.
+
+## Why It Matters
+
+Without reliable sensor handling, even a good AI model will make bad decisions because its inputs do not reflect reality accurately.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Environment"] --> B["Sensors"]
+  B --> C["Filtering"]
+  C --> D["Perception"]
+  D --> E["Robot Behavior"]
+```
+
+## Key Takeaway
+
+Sensors are not just input devices; they are the foundation of trustworthy robot behavior.
 
 ## References
 
-- Sensor vendor docs
+- [Isaac Sim Documentation](https://docs.isaacsim.omniverse.nvidia.com/latest/index.html)
+- [RealSense](https://en.wikipedia.org/wiki/RealSense)
+

@@ -1,35 +1,52 @@
 ---
-title: rclpy in Python
+title: Rclpy Python
 sidebar_position: 3
 ---
 
-# Chapter 6: rclpy in Python
+# Chapter 06: Rclpy Python
 
 ## Purpose
 
-Show how to write small but useful ROS 2 nodes in Python.
+Show how to build ROS 2 logic in Python using rclpy.
 
 ## What You Will Learn
 
-- Node structure.
-- Timers, parameters, and logging.
-- How to wire messages.
+- How to create a ROS 2 node in Python.
+- How to publish and subscribe to messages.
+- How timers and callbacks drive robot behavior.
 
-## Subchapters
+## Chapter Overview
 
-- Basic node structure
-- Timers, parameters, logging
-- Message passing examples
+rclpy is the Python client library for ROS 2. It is the easiest way to prototype robot logic because it makes node creation, message passing, and callback handling straightforward.
 
-## Hands-On Project
+## Core Ideas
 
-Build a Python node that publishes status at a fixed interval.
+The main concepts are node lifecycle, publishers, subscribers, timers, parameters, and spinning the executor to process callbacks.
 
-## Diagrams
+## Practical Example
 
-- Node lifecycle sketch
-- Message flow diagram
+A monitoring node can subscribe to a camera feed, compute a simple metric every second, and publish status updates to the rest of the system.
+
+## Why It Matters
+
+This chapter gives the reader a practical coding entry point before they move into more advanced robotics stacks.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Python Node"] --> B["Publisher"]
+  C["Topic"] --> A
+  A --> D["Timer Callback"]
+  D --> E["Status Message"]
+```
+
+## Key Takeaway
+
+rclpy lets Python developers participate directly in ROS 2 robotics systems.
 
 ## References
 
-- rclpy API docs
+- [ROS 2 docs](https://docs.ros.org/)
+- [Robot Operating System](https://en.wikipedia.org/wiki/Robot_Operating_System)
+

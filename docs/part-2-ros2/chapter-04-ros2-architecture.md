@@ -1,35 +1,53 @@
 ---
-title: ROS 2 Architecture
+title: Ros2 Architecture
 sidebar_position: 1
 ---
 
-# Chapter 4: ROS 2 Architecture
+# Chapter 04: Ros2 Architecture
 
 ## Purpose
 
-Introduce the ROS 2 middleware model and workspace structure.
+Present the full capstone system architecture and show how all previous chapters connect.
 
 ## What You Will Learn
 
-- Nodes, executors, and packages.
-- How ROS 2 supports modular robots.
-- Why communication patterns matter.
+- How the final system is divided into modules.
+- How data and control flow through the stack.
+- How the book turns into one integrated robot.
 
-## Subchapters
+## Chapter Overview
 
-- Middleware overview
-- Nodes and execution model
-- Package and workspace concepts
+This chapter is the structural summary of the book. It shows how sensing, speech, language, navigation, manipulation, and hardware fit together into one coherent humanoid system.
 
-## Hands-On Project
+## Core Ideas
 
-Sketch the packages needed for a small robot demo.
+The architecture should separate perception, language understanding, planning, control, and safety while keeping the interfaces explicit.
 
-## Diagrams
+## Practical Example
 
-- ROS 2 node graph
-- Package and workspace layout
+A spoken command can be routed through voice recognition, task planning, navigation, and manipulation without collapsing into one monolithic program.
+
+## Why It Matters
+
+The capstone architecture proves that the earlier chapters were building toward a real integrated system, not isolated topics.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Voice / Vision Inputs"] --> B["Task Orchestration"]
+  B --> C["Navigation"]
+  B --> D["Manipulation"]
+  B --> E["Safety Layer"]
+  C --> F["Mobile Base"]
+  D --> G["Arms and Hands"]
+```
+
+## Key Takeaway
+
+A good robot architecture makes complex behavior understandable and maintainable.
 
 ## References
 
-- ROS 2 architecture docs
+- [Isaac ROS](https://nvidia-isaac-ros.github.io/)
+

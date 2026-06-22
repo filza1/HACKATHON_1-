@@ -3,35 +3,52 @@ title: Embodied Intelligence
 sidebar_position: 2
 ---
 
-# Chapter 2: Embodied Intelligence
+# Chapter 02: Embodied Intelligence
 
 ## Purpose
 
-Show how perception, planning, and action form a closed loop in physical
-systems.
+Show how embodied intelligence emerges from continuous interaction between body, environment, and control.
 
 ## What You Will Learn
 
-- Feedback and control intuition.
-- Why environment interaction matters.
-- How embodiment changes evaluation.
+- Why embodiment changes the meaning of intelligence.
+- How feedback loops shape behavior.
+- Why robots must learn from action outcomes.
 
-## Subchapters
+## Chapter Overview
 
-- Perception, planning, and action loop
-- Feedback and control intuition
-- Why the body changes the task
+Embodied intelligence is the idea that a robot's body is not a container for intelligence; it is part of intelligence itself. Movement, perception, and environment all influence behavior.
 
-## Hands-On Project
+## Core Ideas
 
-Draw a loop for a robot that senses, decides, and acts in a room.
+The body creates constraints and opportunities. It changes what the robot can perceive, what it can afford to do, and how it should recover when things go wrong.
 
-## Diagrams
+## Practical Example
 
-- Closed-loop robotics control
-- Sensing and actuation pipeline
+A wheeled robot and a biped robot can receive the same navigation goal but need very different control and recovery strategies because their bodies interact with the ground differently.
+
+## Why It Matters
+
+This chapter explains why robotics evaluation must happen in context. A model that looks good in isolation can still fail when the environment responds back.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Body"] --> B["Action"]
+  B --> C["Environment"]
+  C --> D["Perception"]
+  D --> E["Internal State"]
+  E --> F["Decision"]
+  F --> B
+```
+
+## Key Takeaway
+
+Embodied intelligence is intelligence shaped by physical interaction, not abstract reasoning alone.
 
 ## References
 
-- Control system primers
-- Embodied cognition overviews
+- [Embodied cognition](https://en.wikipedia.org/wiki/Embodied_cognition)
+- [Learning Embodied Intelligence from Physical Simulators and World Models](https://arxiv.org/abs/2507.00917)
+

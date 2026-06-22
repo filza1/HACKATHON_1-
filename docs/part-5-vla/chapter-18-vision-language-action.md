@@ -1,34 +1,52 @@
 ---
-title: Vision-Language-Action
+title: Vision Language Action
 sidebar_position: 3
 ---
 
-# Chapter 18: Vision-Language-Action
+# Chapter 18: Vision Language Action
 
 ## Purpose
 
-Explain multimodal grounding from perception to action.
+Explain how vision, language, and action can be fused into a single robotic policy.
 
 ## What You Will Learn
 
-- How language and vision inform action.
-- How to evaluate multimodal systems.
-- Where grounding can fail.
+- What VLA systems are.
+- How perception and language ground action.
+- Why dataset quality matters.
 
-## Subchapters
+## Chapter Overview
 
-- Multimodal grounding
-- Action selection from perception and language
-- Evaluation patterns
+Vision-language-action systems take a visual observation and a language instruction and directly map them to robot actions. This makes them one of the most important recent directions in embodied AI.
 
-## Hands-On Project
+## Core Ideas
 
-Map an object request to an action plan.
+The challenge is grounding: the model must understand what is in the image, what the instruction means, and what action is physically feasible.
 
-## Diagrams
+## Practical Example
 
-- VLA stack
+If the robot sees a cup and hears "move the cup to the tray," the VLA layer should convert that instruction into a concrete manipulation plan.
+
+## Why It Matters
+
+VLA is the bridge between modern multimodal AI and robot control.
+
+## Diagram
+
+```mermaid
+flowchart LR
+  A["Camera / Vision"] --> B["VLA Model"]
+  C["Language"] --> B
+  B --> D["Action Tokens"]
+  D --> E["Robot Control"]
+```
+
+## Key Takeaway
+
+VLA systems unify seeing, understanding, and acting in one model family.
 
 ## References
 
-- Vision-language-action research
+- [Vision-language-action model](https://en.wikipedia.org/wiki/Vision-language-action_model)
+- [VLA survey](https://arxiv.org/abs/2507.10672)
+
