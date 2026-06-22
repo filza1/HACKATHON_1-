@@ -25,6 +25,16 @@ npm run build
 npm run serve
 ```
 
+## Vercel deployment
+
+This project is configured as a static Docusaurus site for Vercel.
+
+- Build command: `npm run build`
+- Output directory: `build`
+
+If you import the GitHub repo into Vercel, these settings are already defined
+in `vercel.json`.
+
 ## Content rules
 
 - Follow the approved spec and constitution.
